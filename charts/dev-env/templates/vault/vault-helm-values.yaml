@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: vault-defaultvalues
+  namespace: {{ .Release.Namespace }}
+  labels:
+    {{- include "dev-env.labels" . | nindent 4 }} 
+data:
+  default-values.yaml: |
+{{- toYaml $.Values.vault | nindent 4 }}

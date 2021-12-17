@@ -1,0 +1,20 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:  
+  name: test  
+spec:
+  chart:
+    spec:
+      chart: test
+      sourceRef:
+        kind: HelmRepository
+        name: owainperry
+        namespace: dev-env-1
+      version: 0.1.0
+  interval: 1m0s
+  releaseName: test
+  valuesFrom:
+  - kind: ConfigMap
+    name: test-defaultvalues
+    valuesKey: default-values.yaml
+status: {}

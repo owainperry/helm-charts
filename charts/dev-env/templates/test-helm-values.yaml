@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: HelmRepository
+metadata:
+  creationTimestamp: null
+  name: owainperry
+  #namespace: dev-env-1
+spec:
+  interval: 0s
+  url: https://owainperry.github.io/helm-charts
+status: {}

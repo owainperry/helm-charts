@@ -5,6 +5,8 @@ metadata:
   labels:
     {{- include "dev-env.labels" . | nindent 4 }}  
 spec:
+  releaseName: test
+  interval: 1m0s
   chart:
     spec:
       chart: test
@@ -13,8 +15,6 @@ spec:
         name: "{{ .Release.Namespace }}-test"
         namespace: {{ .Release.Namespace }}
       version: 0.1.0
-  interval: 1m0s
-  releaseName: test
   valuesFrom:
   - kind: ConfigMap
     name: dev-env-defaultvalues

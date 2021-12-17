@@ -5,8 +5,9 @@ metadata:
   labels:
     {{- include "dev-env.labels" . | nindent 4 }}    
 spec:
-  serviceAccountName: default
   releaseName: localstack
+  interval: 1m0s
+  #serviceAccountName: default
   chart:
     spec:
       chart: localstack
@@ -14,8 +15,7 @@ spec:
         kind: HelmRepository
         name: "localstack"
         namespace: {{ .Release.Namespace }}
-      version: 0.3.7
-  interval: 1m0s
+      version: 0.3.7  
   valuesFrom:
   - kind: ConfigMap
     name: localstack-defaultvalues

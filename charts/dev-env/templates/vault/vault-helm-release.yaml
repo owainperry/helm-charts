@@ -17,6 +17,6 @@ spec:
       version: 0.18.0
   valuesFrom:
   - kind: ConfigMap
-    name: "{{ .Release.Namespace }}-vault"
+    name: "vault-defaultvalues"
     valuesKey: default-values.yaml
 status: {}

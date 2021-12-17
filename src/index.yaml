@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  test:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-12-17T12:16:15.325852173Z"
+    description: A Helm chart for Kubernetes
+    digest: a5ac501151e3110d86a87ef94e288f8adc6f175645f930c9a6dc2cda1f02593b
+    name: test
+    type: application
+    urls:
+    - https://owainperry.github.io/helm-charts/test-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-12-17T12:16:15.324781621Z"

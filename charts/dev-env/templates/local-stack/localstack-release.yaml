@@ -12,7 +12,7 @@ spec:
       chart: localstack
       sourceRef:
         kind: HelmRepository
-        name: "{{ .Release.Namespace }}-localstack"
+        name: "localstack"
         namespace: {{ .Release.Namespace }}
       version: 0.3.7
   interval: 1m0s

@@ -1,7 +1,9 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:  
-  name: test  
+  name: test
+  labels:
+    {{- include "dev-env.labels" . | nindent 4 }}  
 spec:
   chart:
     spec:
@@ -15,6 +17,6 @@ spec:
   releaseName: test
   valuesFrom:
   - kind: ConfigMap
-    name: env-defaultvalues
+    name: dev-env-defaultvalues
     valuesKey: default-values.yaml
 status: {}

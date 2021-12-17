@@ -3,6 +3,8 @@ kind: HelmRepository
 metadata:  
   name: "{{ .Release.Namespace }}-test"
   namespace: {{ .Release.Namespace }}
+  labels:
+    {{- include "dev-env.labels" . | nindent 4 }}   
 spec:
   interval: 0s
   url: https://owainperry.github.io/helm-charts

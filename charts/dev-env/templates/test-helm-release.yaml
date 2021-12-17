@@ -15,6 +15,6 @@ spec:
   releaseName: test
   valuesFrom:
   - kind: ConfigMap
-    name: test-defaultvalues
+    name: env-defaultvalues
     valuesKey: default-values.yaml
 status: {}

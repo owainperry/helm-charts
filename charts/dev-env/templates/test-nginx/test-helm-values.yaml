@@ -8,5 +8,5 @@ metadata:
     {{- include "dev-env.labels" . | nindent 4 }} 
 data:
   default-values.yaml: |
-    service:
-      type: ClusterIP
+{{- toYaml $.Values.test | nindent 4 }}
+

@@ -8,8 +8,8 @@ spec:
       chart: test
       sourceRef:
         kind: HelmRepository
-        name: owainperry
-        namespace: dev-env-1
+        name: "{{ .Release.Namespace }}-test"
+        namespace: {{ .Release.Namespace }}
       version: 0.1.0
   interval: 1m0s
   releaseName: test

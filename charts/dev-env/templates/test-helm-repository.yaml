@@ -1,9 +1,8 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository
-metadata:
-  creationTimestamp: null
-  name: owainperry
-  #namespace: dev-env-1
+metadata:  
+  name: "{{ .Release.Namespace }}-test"
+  namespace: {{ .Release.Namespace }}
 spec:
   interval: 0s
   url: https://owainperry.github.io/helm-charts

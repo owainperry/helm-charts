@@ -3,7 +3,17 @@ entries:
   dev-env:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-12-17T15:42:17.259828713Z"
+    created: "2021-12-17T15:59:39.129942298Z"
+    description: A Helm chart for Kubernetes
+    digest: fe6e4480f921fb65880ef89a5b6eb55383973a45249021b4d2182bac5d6f18f5
+    name: dev-env
+    type: application
+    urls:
+    - https://owainperry.github.io/helm-charts/dev-env-0.7.0.tgz
+    version: 0.7.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-12-17T15:59:39.129602013Z"
     description: A Helm chart for Kubernetes
     digest: 6f2daf064e3acd3d2b1c1c1fff99967836b2ecc5fb8a90edf8677d122edab416
     name: dev-env
@@ -13,7 +23,7 @@ entries:
     version: 0.6.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-12-17T15:42:17.259697321Z"
+    created: "2021-12-17T15:59:39.129440191Z"
     description: A Helm chart for Kubernetes
     digest: b4402e1dd1bfbc62fd170bd07194ec27b9c0bec2588537c7e2eb383c53bf86df
     name: dev-env
@@ -23,7 +33,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-12-17T15:42:17.259446724Z"
+    created: "2021-12-17T15:59:39.129181499Z"
     description: A Helm chart for Kubernetes
     digest: cc5e595b0ad057ee87cac5c83652e1d8da7b8c7ddb5a979deaefb0e904a2ca18
     name: dev-env
@@ -33,7 +43,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-12-17T15:42:17.259194867Z"
+    created: "2021-12-17T15:59:39.128909152Z"
     description: A Helm chart for Kubernetes
     digest: fa4b4a470460f888437c1b045f4d0cbc8e96d79a32b4b7bec41adc873fb81f4f
     name: dev-env
@@ -43,7 +53,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-12-17T15:42:17.258895508Z"
+    created: "2021-12-17T15:59:39.128590644Z"
     description: A Helm chart for Kubernetes
     digest: 2fee5e9b31f6cd2db43ed5b5de2bf5361122f5e9d3ed40b88ea7278e31f7cba8
     name: dev-env
@@ -54,12 +64,12 @@ entries:
   test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-12-17T15:42:17.26010511Z"
+    created: "2021-12-17T15:59:39.130225421Z"
     description: A Helm chart for Kubernetes
-    digest: f431e30f91170e430fb71874106fc4c72fe0c65f193ca4dca6e4af137b753739
+    digest: fd9a931c3165ce701fb90965759ce95d4fc3dd7ffbba0e07f30c1d29f5c1ba92
     name: test
     type: application
     urls:
     - https://owainperry.github.io/helm-charts/test-0.1.0.tgz
     version: 0.1.0
-generated: "2021-12-17T15:42:17.258483524Z"
+generated: "2021-12-17T15:59:39.127597378Z"

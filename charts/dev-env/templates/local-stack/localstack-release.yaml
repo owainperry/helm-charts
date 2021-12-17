@@ -1,0 +1,22 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: localstack
+  labels:
+    {{- include "dev-env.labels" . | nindent 4 }}    
+spec:
+  serviceAccountName: default
+  releaseName: localstack
+  chart:
+    spec:
+      chart: localstack
+      sourceRef:
+        kind: HelmRepository
+        name: "{{ .Release.Namespace }}-localstack"
+        namespace: {{ .Release.Namespace }}
+      version: 0.3.7
+  interval: 1m0s
+  valuesFrom:
+  - kind: ConfigMap
+    name: localstack-defaultvalues
+    valuesKey: default-values.yaml

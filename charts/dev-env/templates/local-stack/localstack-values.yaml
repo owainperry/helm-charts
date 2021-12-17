@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: localstack-defaultvalues
+  labels:
+    {{- include "dev-env.labels" . | nindent 4 }}      
+data:
+  default-values.yaml: |
+{{- toYaml $.Values.localstack | nindent 4 }}
+  
+
